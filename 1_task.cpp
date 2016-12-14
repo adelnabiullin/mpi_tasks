@@ -11,8 +11,6 @@ int main() {
 
 	printf("Rank in MPI_COMM_WORLD = %d\n", rank);
 
-	MPI_Barrier(MPI_COMM_WORLD);
-
   MPI_Finalize();
   return 0;
 }

@@ -16,7 +16,7 @@ int main() {
 
     if (size < 2) {
         if (rank == 0)
-        printf("Error: at least two processes required, abort\n");
+            printf("Error: at least two processes required, abort\n");
 
         MPI_Barrier(MPI_COMM_WORLD);
         MPI_Abort(MPI_COMM_WORLD, MPI_ERR_OTHER);
